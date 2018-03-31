@@ -1,0 +1,14 @@
+// find no even or odd
+ 
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter a no\n");
+	scanf("%d",&a);
+	if ((1&a)==1)
+		printf("Even no\n");
+	else
+		printf("Odd no\n");
+	return 0;
+}

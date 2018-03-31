@@ -1,0 +1,15 @@
+# reduce size and creat thumbnail of pix saved in images
+FILES = $(shell find image -type f -iname "*.jpg" | sed 's/image/thumb/g')
+CONVERT_CMD = convert -resize "100x100" $< $@
+MSG = @echo "\nUpdating thumbnail" $@
+
+all: ${FILES}
+thumb/%.jpg: image/%.jpg
+	$(MSG)
+	$(CONVERT_CMD)
+thumb/%.JPG: image/%.JPG
+	$(MSG)
+	$(CONVERT_CMD)
+clean:
+	@echo  Cleaning up files..
+	rm -rf thumb/*.jpg thumb/*.JPG

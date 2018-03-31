@@ -1,0 +1,14 @@
+To compile it (if you use GCC):
+
+$ gcc -c whatever.c -o whatever.o
+$ gcc -c sample.c -o sample.o
+
+To link the files to create an executable file:
+
+$ gcc sample.o whatever.o -o sample
+
+You can test sample:
+
+$ ./sample
+3
+$

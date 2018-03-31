@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	struct sample
+	{
+		unsigned a:5;
+		unsigned b:5;
+		unsigned :5;
+		unsigned d:1;
+	};
+	struct sample s;
+	printf("Size of the structure is %d\n",sizeof(s));
+	printf("Size of int = %d\n",sizeof(int));
+	printf("Size of long int = %d\n",sizeof(long int));
+	printf("Size of float= %d\n",sizeof(float));
+	printf("Size of double = %d\n",sizeof(double));
+	printf("size of unsignner int : %d",sizeof(unsigned));
+	return 0;
+}

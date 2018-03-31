@@ -1,0 +1,3 @@
+this is the file to check the pattern matching
+the words here are used by program "find" to check for a particular pattern
+the following lines doesnt meant anything

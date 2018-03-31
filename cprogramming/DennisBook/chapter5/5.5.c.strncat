@@ -1,0 +1,27 @@
+// strncat using pointers
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void mystrncat(char *s,char *t, int n);
+int main()
+{
+	char *s = malloc(50);
+	strcpy(s,"firststring");
+	char *t = "secondstring";
+	int n = 0;
+	mystrncat(s,t,n);
+	puts(s);
+	return 0;
+}
+
+void mystrncat(char *s,char *t, int n)
+{
+	while(*s++)
+		;
+	*s--;
+	while(*t && n-- > 0)
+		*s++ = *t++;
+	*s = '\0';
+}
+	

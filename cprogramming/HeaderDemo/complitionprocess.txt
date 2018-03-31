@@ -1,0 +1,24 @@
+To compile it (if you use GCC):
+
+$ gcc -c whatever.c -o whatever.o
+$ gcc -c sample.c -o sample.o
+
+To link the files to create an executable file:
+
+$ gcc sample.o whatever.o -o sample
+
+You can test sample:
+
+$ ./sample
+3
+$
+
+
+
+/////////////////////////////////////////////////////////////////
+for the prime.c go.c and prime.h
+///////////////////////////////////////////////////////////////////
+
+plg@wildebeest:~/Desktop$ gcc -o go go.c primes.c
+plg@wildebeest:~/Desktop$ ./go 1
+isPrime(1) = 0

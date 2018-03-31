@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<errno.h>
+int main()
+{
+	FILED *fp;
+	char ch;
+	struct emp
+	{
+		char name[20];
+		char marrital_status;
+		int empid;
+		int age;
+		int department;
+	};
+	if(fp = fopen("data.txt","w")==NULL)
+	{
+		fprintf(stderr, "Couldnt open the file\n",errno());
+		exit(0);
+	}
+	
+	writedata(struct emp,char *pt)
+	{
+		
+	
+		
+
+	

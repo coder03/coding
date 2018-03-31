@@ -1,0 +1,12 @@
+1. gcc -g <exicutable_name> <filename.c>
+2. file <exicutable_name>
+3. break <filename.c> :<line_no or function_name>
+	a. info breakpoints			// to see all breakpoint
+	b. clear <filename.c>:<line_no\>	// to delete breakpoint
+4. run <exicutable_name> <arguments if any>
+	a. s  // execute next line
+	b. si // next instruction in complied code
+	c. n  // next line.
+5. print <variable_name>
+6. info registers  	// display all reg
+	 
