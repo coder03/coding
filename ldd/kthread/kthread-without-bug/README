@@ -1,0 +1,6 @@
+To remove the kthread:
+
+ps -ef | grep kthread
+find the kthread PID
+kill -p <PID>
+sudo rmmod pthread
