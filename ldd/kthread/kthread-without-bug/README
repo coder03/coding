@@ -1,6 +1,7 @@
+Source: https://sysplay.in/blog/linux-kernel-internals/2015/05/kernel-threads-continued/
 To remove the kthread:
 
 ps -ef | grep kthread
 find the kthread PID
 kill -p <PID>
-sudo rmmod pthread
+sudo rmmod kthread

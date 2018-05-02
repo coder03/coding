@@ -1,3 +1,4 @@
+Source: https://sysplay.in/blog/linux-kernel-internals/2015/04/kernel-threads/
 This code is buggy. once you load this module you will never be able to unload it.
 Calling kthread_stop() doesn’t gives you a license to kill/stop the thread, 
 instead it just sets the flag in the task_struct() of the thread and waits for 
