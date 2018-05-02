@@ -1,0 +1,5 @@
+C++ code to print odd and even numbers using 2 different threadings
+
+Enhancements: 
+1. Considering changing this code to c from c++ 
+2. Make it generic program instead of hardcoded value to print till 13
