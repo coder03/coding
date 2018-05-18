@@ -1,0 +1,7 @@
+Debugging running process using gdb
+ref: http://www.dirac.org/linux/gdb/06-Debugging_A_Running_Process.php
+cc -g -o beer-process beer-process.c
+./beer-process &
+find PID
+sudo gdb
+attach <PID>
